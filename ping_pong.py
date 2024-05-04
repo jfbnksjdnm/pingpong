@@ -46,7 +46,7 @@ window.fill(back)
 game = True
 finish = False
 clock = time.Clock()
-FPS = 60
+FPS = 90
 
 #создания мяча и ракетки    
 racket1 = Player('racket.png', 30, 200, 4, 50, 150) # при созданни спрайта добавляется еще два параметра
@@ -55,8 +55,8 @@ ball = GameSprite('tenis_ball.png', 200, 200, 4, 50, 50)
 
 font.init()
 font = font.Font(None, 35)
-lose1 = font.render('PLAYER 1 LOSE!', True, (180, 0, 0))
-lose2 = font.render('PLAYER 2 LOSE!', True, (180, 0, 0))
+lose1 = font.render('Игрок номер 1 проигрывает', True, (180, 0, 0))
+lose2 = font.render('Игрок номер 2 проигрывает', True, (180, 0, 0))
 
 speed_x = 3
 speed_y = 3
